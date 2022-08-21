@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script>
+	function valid(){
+		var a = document.frm.nme.value;
+		var b = document.frm.cont.value;
+		if(a=="")
+			{
+				alert("Name Field is empty");
+				return false;
+			}
+		else if(b=="")
+			{
+				alert("contact Field is empty");
+				return false;
+			}
+		else{
+			return true;
+		}
+	}
+	</script>
+	</head>
+<body>
+<form name="frm">
+	Name<input type="text" name='nme'/>
+	<br>
+	<br>
+	Contact<input type="text" name="cont"/>
+	<input type="submit" name="submit" onsubmit="return valid();"/>
+ 	</form>
+</body>
+</html>
